@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dice roller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>dice roller</h1>
+
+    <div class="controls">
+      <label>
+        die
+        <select id="dieType">
+          <option value="4">d4</option>
+          <option value="6" selected>d6</option>
+          <option value="8">d8</option>
+          <option value="10">d10</option>
+          <option value="12">d12</option>
+          <option value="20">d20</option>
+        </select>
+      </label>
+
+      <label>
+        how many
+        <select id="dieCount">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+
+      <button id="rollBtn">roll</button>
+    </div>
+
+    <div id="result" class="result">-</div>
+    <div id="rollDetail" class="detail"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
