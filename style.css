@@ -20,6 +20,13 @@ h1 {
   margin: 0 0 24px;
 }
 
+h2 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  color: #b9b9c0;
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +67,17 @@ button {
 button:hover { background: #fff; }
 button:active { transform: translateY(1px); }
 
+button.ghost {
+  background: transparent;
+  color: #8a8a93;
+  border: 1px solid #2a2c35;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+}
+
+button.ghost:hover { color: #e7e7ea; }
+
 .result {
   font-size: 5rem;
   font-weight: 700;
@@ -73,4 +91,65 @@ button:active { transform: translateY(1px); }
   color: #8a8a93;
   font-size: 0.9rem;
   min-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin-top: 24px;
+  border-top: 1px solid #2a2c35;
+  padding-top: 20px;
+}
+
+.stats header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.muted { color: #6b6b73; font-size: 0.9rem; }
+
+.face-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.face {
+  background: #1d1f26;
+  border: 1px solid #2a2c35;
+  border-radius: 6px;
+  padding: 8px 6px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.face .n { font-size: 1.05rem; font-weight: 600; }
+.face .c { font-size: 0.75rem; color: #8a8a93; margin-top: 2px; }
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.summary div {
+  background: #1d1f26;
+  border: 1px solid #2a2c35;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.summary .label {
+  font-size: 0.75rem;
+  color: #8a8a93;
+  text-transform: lowercase;
+}
+
+.summary .value {
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+  margin-top: 2px;
 }
