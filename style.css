@@ -153,3 +153,14 @@ button.ghost:hover { color: #e7e7ea; }
   font-variant-numeric: tabular-nums;
   margin-top: 2px;
 }
+
+.verdict {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.verdict.fair { background: #15301f; color: #9bd9b1; border: 1px solid #1f4830; }
+.verdict.sus  { background: #3a1d1d; color: #e6a3a3; border: 1px solid #5b2a2a; }
+.verdict.wait { background: #1d1f26; color: #8a8a93; border: 1px solid #2a2c35; }
