@@ -35,3 +35,5 @@ stats are saved per die size, so the d6 history does not mix with the d20 histor
 - `script.js` rolling, stats, chi-square
 
 licensed under PolyForm Noncommercial 1.0.0, see LICENSE. personal and hobby use is fine, commercial use is not.
+
+Note: the chi-square check holds off until at least 5 rolls per face so it does not flag a perfectly fine die just because you only rolled it ten times.
