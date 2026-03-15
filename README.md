@@ -1,5 +1,7 @@
 # dice roller
 
+![](docs/screenshot.png)
+
 small thing I made one evening because I wanted to know if the d20 from my dnd set is actually fair. spoiler, after a few hundred rolls it looks fine. it is just unlucky.
 
 ## what it does
